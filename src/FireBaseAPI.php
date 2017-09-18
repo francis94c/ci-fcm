@@ -5,20 +5,41 @@
  * file into 'application/libraries' folder.]
  */
 class FireBaseAPI {
-  function getName() {
+  static function getName() {
     return "FireBaseAPI";
   }
 }
 class FireBasePayLoad {
+
   private $url = "https://fcm.googleapis.com/fcm/send";
   private $fields = array();
   private $key;
   private $notification;
   private $restrictedPackageName;
   private $ch;
-  function setTo($to) {
-    $this->fields['to'] = $to;
+
+  /**
+   * [setDeviceId sets the id of the device to send pyload to.]
+   * @param [string] $to [unique device id.]
+   */
+  function setDeviceId($deviceId) {
+    $this->fields['to'] = $deviceId;
   }
+
+  /**
+   * [setTopic sets the topic of payload]
+   * @param [string] $topic [the topic od the payload without the
+   *                        /topics/.. prefix.]
+   */
+  function setTopic($topic) {
+    $this->fields['to'] = "/topics/$topic";
+  }
+
+  /**
+   * [setKey Your Google API Authorization Key.]
+   * @param [string] $key [unique keey for accessing the Firebase Cloud Messaging
+   *                      service.]
+   */
   function setKey($key) {
     $this->key = $key;
   }
