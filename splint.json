@@ -1,0 +1,16 @@
+{
+  "name": "francis94c/ci-firebase",
+  "type": "library",
+  "description": "An API for easy sending of Firebase push notifications to devices from a php (Code Igniter) based server.",
+  "tags": ["firebase"],
+  "page": "https://github.com/francis94c/ci-firebase",
+  "authors": [
+    {
+      "name": "Francis Ilechukwu",
+      "email": "francis94c@gmail.com",
+      "page": "about.me/francisilechukwu",
+      "role": "Developer"
+    }
+  ],
+  "php": ">=5.3.0"
+}

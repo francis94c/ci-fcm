@@ -1,4 +1,22 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class FireBase {
+
+  private $ci;
+
+  function __construct() {
+    $this->ci =& get_instance();
+  }
+  /**
+   * [push description]
+   * @param  [type] $payload [description]
+   * @return [type]          [description]
+   */
+  function push($payload) {
+
+  }
+}
 class FireBasePayLoad {
     private $url = "https://fcm.googleapis.com/fcm/send";
     private $fields = array();
