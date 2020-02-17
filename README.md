@@ -1,2 +1,2 @@
-# PHPFireBaseAPI
-An API for easy sending of firebase push notifications to devices from a php based server
+# ci-fcm
+Code Igniter Library for Google FireBase Cloud Messaging (FCM).
