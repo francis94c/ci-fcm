@@ -1,13 +1,23 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class FireBase {
-
+class FCM
+{
+  /**
+   * [private description]
+   * @var [type]
+   */
   private $ci;
 
-  function __construct() {
+  /**
+   * [__construct description]
+   * @date 2020-02-17
+   */
+  function __construct()
+  {
     $this->ci =& get_instance();
   }
+  
   /**
    * [push description]
    * @param  [type] $payload [description]
